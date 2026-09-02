@@ -54,3 +54,23 @@ print("--------------------------------------------")
 # Ejercicio 4: Crea una función "contar_vocales" que reciba una 
 # palabra y devuelva cuántas vocales tiene
 
+def contadorVocal(palabra):
+    #los contadores debo indiciarles desde donde inciar
+    palabra = palabra.lower()
+    contador = 0
+    for letra in palabra:
+        if letra in "aeiou":
+            contador = contador + 1       
+    return contador   
+
+print(contadorVocal("hola"))
+print(contadorVocal("Graciela"))
+print(contadorVocal("antroPOmorfIco"))
+print("--------------------------------------------")
+print("--------------------------------------------")
+
+
+
+
+
+
